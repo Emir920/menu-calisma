@@ -1,7 +1,7 @@
 print("╔═════════════════════╗")
 print("║     OYUNLAR         ║") 
 print("╠═════════════════════╣")
-print("║  1-Tetris           ║")
+print("║  1-taş kağıt makas  ║")
 print("║  2-                 ║")
 print("║  3-                 ║")
 print("║  4-                 ║")
