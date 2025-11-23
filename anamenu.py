@@ -13,14 +13,15 @@ def anamenu():
     print("║ 10-Cikis            ║")
     print("║                     ║")
     print("║    Seçimiz nedir?   ║")
-    print("╚═════════════════════╝")
+    print("╚═════════════════════╝") 
     secim = input()
     if secim =="1":
         print("Hesap yapmak istiyorsun demek.")
         import moduller.hesapmakinesi        
 
-    if secim =="2": print("Çizim yapmak istiyorsun demek.")
-    import moduller.cizimler
+    if secim =="2":
+        print("Çizim yapmak istiyorsun demek.")
+        import moduller.cizimler
 
     if secim =="3": 
         import moduller.oyunlar
