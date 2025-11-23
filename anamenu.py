@@ -14,6 +14,7 @@ def anamenu():
     print("║                     ║")
     print("║    Seçimiz nedir?   ║")
     print("╚═════════════════════╝") 
+
     secim = input()
     if secim =="1":
         print("Hesap yapmak istiyorsun demek.")
