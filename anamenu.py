@@ -10,7 +10,7 @@ def anamenu():
     print("║  7-                 ║")
     print("║  8-                 ║")
     print("║  9-                 ║")
-    print("║ 10-Cikis            ║")
+    print("║ 10-Cikiş            ║")
     print("║                     ║")
     print("║    Seçimiz nedir?   ║")
     print("╚═════════════════════╝") 
