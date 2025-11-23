@@ -1,0 +1,21 @@
+print("╔═════════════════════╗")
+print("║     OYUNLAR         ║") 
+print("╠═════════════════════╣")
+print("║  1-Tetris           ║")
+print("║  2-                 ║")
+print("║  3-                 ║")
+print("║  4-                 ║")
+print("║  5-                 ║")
+print("║  6-                 ║")
+print("║  7-                 ║")
+print("║  8-Anamenu          ║")
+print("║  9-Cikis            ║")
+print("║                     ║")
+print("║    Seçimiz nedir?   ║")
+print("╚═════════════════════╝")
+secim=input()
+if secim=="1":
+    import moduller.oyn_tetris
+    moduller.oyn_tetris.tetris_oyna()
+if secim=="2": pass
+if secim=="9": exit()
