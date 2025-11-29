@@ -2,7 +2,7 @@ print("╔═════════════════════╗")
 print("║     OYUNLAR         ║") 
 print("╠═════════════════════╣")
 print("║  1-taş kağıt makas  ║")
-print("║  2-                 ║")
+print("║  2- X O X           ║")
 print("║  3-                 ║")
 print("║  4-                 ║")
 print("║  5-                 ║")
@@ -17,5 +17,7 @@ secim=input()
 if secim=="1":
     import moduller.oyn_tetris
     moduller.oyn_tetris()
-if secim=="2": pass
+if secim=="2":
+    import moduller.tıctactoe
+    moduller.tıctactoe.board()
 if secim=="9": exit()
