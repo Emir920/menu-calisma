@@ -16,6 +16,6 @@ print("╚═════════════════════╝")
 secim=input()
 if secim=="1":
     import moduller.oyn_tetris
-    moduller.oyn_tetris.tetris_oyna()
+    moduller.oyn_tetris()
 if secim=="2": pass
 if secim=="9": exit()
