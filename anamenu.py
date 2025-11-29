@@ -20,10 +20,6 @@ def display_menu():
     print("╚═════════════════════╝")
 
 def get_valid_choice():
-    """
-    Prompts the user for a valid menu choice and returns it.
-    Handles invalid inputs gracefully.
-    """
     valid_choices = ["1", "2", "3", "10"]
     while True:
         try:
@@ -40,32 +36,33 @@ def get_valid_choice():
 
 def anamenu():
     """
-    Main menu function that handles user selections and module imports.
+    Main menu function for ETKİN APP.
     """
-    actions = {
-        "1": ("Hesap yapmak istiyorsun demek.", "moduller.hesapmakinesi"),
-        "2": ("Çizim yapmak istiyorsun demek.", "moduller.cizimler"),
-        "3": ("Oyun oynamak istiyorsun demek.", "moduller.oyunlar"),
-        "10": ("Çıkış yapılıyor.", None)
-    }
-
     while True:
         display_menu()
         secim = get_valid_choice()
-        message, module = actions[secim]
-        print(message)
 
-        if module:
+        if secim == "1":
             try:
-                __import__(module)
-            except ImportError as e:
-                print(f"Modül '{module}' yüklenirken hata oluştu: {e}")
-                print("Lütfen modülün mevcut olduğundan emin olun.")
+                import moduller.hesapmakinesi
+                moduller.hesapmakinesi.hesapmakinesi()
             except Exception as e:
-                print(f"Modül yüklenirken beklenmeyen bir hata oluştu: {e}")
-        else:
+                print(f"Hesaplamalar modülü yüklenirken hata: {e}")
+        elif secim == "2":
+            try:
+                import moduller.cizimler
+                moduller.cizimler.cizimler()
+            except Exception as e:
+                print(f"Çizimler modülü yüklenirken hata: {e}")
+        elif secim == "3":
+            try:
+                import moduller.oyunlar
+                moduller.oyunlar.oyunlar()
+            except Exception as e:
+                print(f"Oyunlar modülü yüklenirken hata: {e}")
+        elif secim == "10":
             print("ETKİN APP'den çıkış yapılıyor. Hoşça kalın!")
-            break
+            exit()
 
 if __name__ == "__main__":
     anamenu()
