@@ -6,7 +6,7 @@ def oyunlar():
     print("║  2- X O X           ║")
     print("║  3-sayı tahmini     ║")
     print("║  4-adam asmaca      ║")
-    print("║  5-                 ║")
+    print("║  5-pokemon yazılı   ║")
     print("║  6-                 ║")
     print("║  7-                 ║")
     print("║  8-Anamenu          ║")
@@ -27,4 +27,7 @@ def oyunlar():
     if secim == "4":
         import moduller.oyn_hangman
         moduller.oyn_hangman.adam_asmaca()
+    if secim == "5":
+        import moduller.oyn_pokemon
+        moduller.oyn_pokemon.main()
     if secim=="9": exit()

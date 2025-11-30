@@ -1,6 +1,6 @@
 def display_menu():
     """
-    Displays the main menu for ETKİN APP with ASCII art borders.
+
     """
     print("╔═════════════════════╗")
     print("║     ETKİN APP       ║")
