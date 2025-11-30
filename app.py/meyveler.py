@@ -2,9 +2,9 @@ meyveler = ['Muz', 'Nar', 'Dut'] # list
 haftasonu = ("Cumartesi","Pazar") # tupple
 ogrenci1 = {
     "adi" : "Emir",
-    "soyadi" : "KARA",
-    "numarasi" : 457
-    } # sözlük
+    "soyadi" : "Alshboul",
+    "numarasi" : 605
+    } 
 kullaniciTuru = {"admin","ogretmen","ogrenci"} # set
 
 
