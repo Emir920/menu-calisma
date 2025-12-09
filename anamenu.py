@@ -8,7 +8,7 @@ def display_menu():
     print("║  1-Hesaplamalar     ║")
     print("║  2-Çizimler         ║")
     print("║  3-Oyunlar          ║")
-    print("║  4-                 ║")
+    print("║  4-carpım tablosu   ║")
     print("║  5-                 ║")
     print("║  6-                 ║")
     print("║  7-                 ║")
@@ -62,7 +62,6 @@ def anamenu():
                 print(f"Oyunlar modülü yüklenirken hata: {e}")
         elif secim == "10":
             print("ETKİN APP'den çıkış yapılıyor. Hoşça kalın!")
-            exit()
 
 if __name__ == "__main__":
     anamenu()
