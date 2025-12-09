@@ -17,7 +17,7 @@ def oyunlar():
     secim=input()
     if secim=="1":
         import moduller.oyn_rockpaperscisors
-        moduller.oyn_tetris()
+        moduller.oyn_rockpaperscisors.tas_kagit_makas()
     if secim=="2":
         import moduller.tıctactoe
         moduller.tıctactoe.board()

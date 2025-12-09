@@ -8,7 +8,7 @@ def display_menu():
     print("║  1-Hesaplamalar     ║")
     print("║  2-Çizimler         ║")
     print("║  3-Oyunlar          ║")
-    print("║  4-carpım tablosu   ║")
+    print("║  4-                 ║")
     print("║  5-                 ║")
     print("║  6-                 ║")
     print("║  7-                 ║")
