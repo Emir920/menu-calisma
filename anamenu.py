@@ -27,7 +27,7 @@ def get_valid_choice():
             if secim in valid_choices:
                 return secim
             else:
-                print("Geçersiz seçim. Lütfen 1, 2, 3, 4 veya 10'u seçin.")
+                print("Geçersiz seçim. Lütfen 1, 2, 3, veya 10'u seçin.")
         except KeyboardInterrupt:
             print("\nProgramdan çıkılıyor...")
             exit()
