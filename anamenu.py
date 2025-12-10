@@ -23,7 +23,7 @@ def get_valid_choice():
     valid_choices = ["1", "2", "3", "4", "10"]
     while True:
         try:
-            secim = input("Lütfen seçiminizi girin (1, 2, 3, 4 veya 10): ").strip()
+            secim = input("Lütfen seçiminizi girin bu seçim hangisini açacağını belirler (1, 2, 3, 4 veya 10): ").strip()
             if secim in valid_choices:
                 return secim
             else:
