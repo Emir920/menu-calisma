@@ -8,7 +8,7 @@ def display_menu():
     print("║  1-Hesaplamalar     ║")
     print("║  2-Çizimler         ║")
     print("║  3-Oyunlar          ║")
-    print("║  4-                 ║")
+    print("║  4-python sınavı    ║")
     print("║  5-                 ║")
     print("║  6-                 ║")
     print("║  7-                 ║")
@@ -20,14 +20,14 @@ def display_menu():
     print("╚═════════════════════╝")
 
 def get_valid_choice():
-    valid_choices = ["1", "2", "3", "10"]
+    valid_choices = ["1", "2", "3", "4", "10"]
     while True:
         try:
-            secim = input("Lütfen seçiminizi girin (1, 2, 3 veya 10): ").strip()
+            secim = input("Lütfen seçiminizi girin (1, 2, 3, 4 veya 10): ").strip()
             if secim in valid_choices:
                 return secim
             else:
-                print("Geçersiz seçim. Lütfen 1, 2, 3 veya 10'u seçin.")
+                print("Geçersiz seçim. Lütfen 1, 2, 3, 4 veya 10'u seçin.")
         except KeyboardInterrupt:
             print("\nProgramdan çıkılıyor...")
             exit()
@@ -43,23 +43,17 @@ def anamenu():
         secim = get_valid_choice()
 
         if secim == "1":
-            try:
                 import moduller.hesapmakinesi
                 moduller.hesapmakinesi.hesapmakinesi()
-            except Exception as e:
-                print(f"Hesaplamalar modülü yüklenirken hata: {e}")
         elif secim == "2":
-            try:
                 import moduller.cizimler
                 moduller.cizimler.cizimler()
-            except Exception as e:
-                print(f"Çizimler modülü yüklenirken hata: {e}")
         elif secim == "3":
-            try:
                 import moduller.oyunlar
                 moduller.oyunlar.oyunlar()
-            except Exception as e:
-                print(f"Oyunlar modülü yüklenirken hata: {e}")
+        elif secim == "4":
+             import moduller.py_sınav
+             moduller.py_sınav.run_quiz()
         elif secim == "10":
             print("ETKİN APP'den çıkış yapılıyor. Hoşça kalın!")
 
