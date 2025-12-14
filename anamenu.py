@@ -9,7 +9,7 @@ def display_menu():
     print("║  2-Çizimler         ║")
     print("║  3-Oyunlar          ║")
     print("║  4-python sınavı    ║")
-    print("║  5-                 ║")
+    print("║  5-chat box         ║")
     print("║  6-                 ║")
     print("║  7-                 ║")
     print("║  8-                 ║")
@@ -20,14 +20,14 @@ def display_menu():
     print("╚═════════════════════╝")
 
 def get_valid_choice():
-    valid_choices = ["1", "2", "3", "4", "10"]
+    valid_choices = ["1", "2", "3", "4", "5", "10"]
     while True:
         try:
-            secim = input("Lütfen seçiminizi girin bu seçim hangisini açacağını belirler (1, 2, 3, 4 veya 10): ").strip()
+            secim = input("Lütfen seçiminizi girin bu seçim hangisini açacağını belirler (1, 2, 3, 4, 5 veya 10): ").strip()
             if secim in valid_choices:
                 return secim
             else:
-                print("Geçersiz seçim. Lütfen 1, 2, 3, veya 10'u seçin.")
+                print("Geçersiz seçim. Lütfen 1, 2, 3, 4, 5 veya 10'u seçin.")
         except KeyboardInterrupt:
             print("\nProgramdan çıkılıyor...")
             exit()
@@ -54,6 +54,9 @@ def anamenu():
         elif secim == "4":
              import moduller.py_sınav
              moduller.py_sınav.run_quiz()
+        elif secim == "5":
+            import moduller.chatbox
+            moduller.chatbox.main()
         elif secim == "10":
             print("ETKİN APP'den çıkış yapılıyor. Hoşça kalın!")
 
