@@ -35,9 +35,7 @@ def get_valid_choice():
             print(f"Beklenmeyen bir hata oluştu: {e}. Lütfen tekrar deneyin.")
 
 def anamenu():
-    """
-    Main menu function for ETKİN APP.
-    """
+ 
     while True:
         display_menu()
         secim = get_valid_choice()
